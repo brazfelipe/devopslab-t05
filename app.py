@@ -2,6 +2,8 @@ from flask import Flask
 
 app = Flask(__name__)
 
+csrf = CSRFProtect(app) 
+
 @app.route("/")
 def pagina_inicial():
     return "Olá, eu sou o Braz. Sou líder de QA. Segue meu Linkedin: https://www.linkedin.com/in/felipe-braz/"
